@@ -1,0 +1,9 @@
+{
+  "title": "Chapter 1 Language Processing and Python",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### 1.1 Computing with Language:Texts and Words\n\nPython interpreter -> with IDLE\n\n>>> import nltk\n>>> nltk.download()\n\n>>> from nltk.book import *\n>>> text1\n<Text: Moby Dick by Herman Melville 1851>\n>>> text2\n<Text: Sense and Sensibility by Jane Austen 1811>\n\n#### concordance\n>>> text1.concordance(\"monstrous\") Building index...\nDisplaying 11 of 11 matches:\nmonstrous size . ... This came towards us , \nmonstrous bulk of the whale or ork we have r \nmonstrous clubs and spears . Some were thick\n\n### 快捷键\nup-arrow\nCtrl-up-arrow\nAlt-p\naccess the previous command\n\n#### similar\nprint(text1.similar(\"monstrous\"))\nsometimes functions as an intensifier like the word very.\n\n\n#### common_contexts\n>>> text2.common_contexts([\"monstrous\", \"very\"]) \nbe_glad am_glad a_pretty is_pretty a_lucky\n\n__dispersion plot__\n\n![IMAGE](quiver-image-url/09A62EC8F93A26EC93C98F944FE11053.jpg =862x368)\n\n![IMAGE](quiver-image-url/949775F2D103A6CD3C63CF84402C487E.jpg =850x411)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+    }
+  ]
+}
